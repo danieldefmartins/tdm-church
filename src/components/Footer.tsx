@@ -69,7 +69,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white">
+    <footer className="bg-black text-white">
       {/* CTA Banner */}
       <div className="bg-secondary py-8 sm:py-10">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
@@ -83,7 +83,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               href="/cultos"
-              className="px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-light transition-colors"
+              className="px-8 py-3 bg-black text-white font-semibold rounded-lg hover:bg-black/80 transition-colors border border-white/20"
             >
               Horários dos Cultos
             </Link>

@@ -40,7 +40,7 @@ export default function Header() {
       <div className="h-[3px] bg-secondary" />
 
       {/* Info bar */}
-      <div className="bg-primary text-white text-xs sm:text-sm h-8 sm:h-10 flex items-center justify-center gap-4 sm:gap-8 px-4">
+      <div className="bg-black text-white text-xs sm:text-sm h-8 sm:h-10 flex items-center justify-center gap-4 sm:gap-8 px-4">
         <a
           href="tel:+17814803125"
           className="flex items-center gap-1.5 hover:text-secondary transition-colors"
@@ -146,14 +146,14 @@ export default function Header() {
             <div className="hidden lg:flex items-center gap-3">
               <Link
                 href="/cultos"
-                className="flex items-center gap-2 px-5 py-2.5 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary-light transition-colors"
+                className="flex items-center gap-2 px-5 py-2.5 bg-black text-white text-sm font-semibold rounded-lg hover:bg-black/80 transition-colors"
               >
                 <Play className="w-3.5 h-3.5" />
                 Ao Vivo
               </Link>
               <Link
                 href="/ofertas"
-                className="flex items-center gap-2 px-5 py-2.5 bg-secondary text-white text-sm font-semibold rounded-lg hover:bg-secondary-dark transition-colors"
+                className="flex items-center gap-2 px-5 py-2.5 bg-secondary text-black text-sm font-semibold rounded-lg hover:bg-secondary-light transition-colors"
               >
                 <Heart className="w-3.5 h-3.5" />
                 Ofertar

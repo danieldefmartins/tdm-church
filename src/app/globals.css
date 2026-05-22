@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #1B1F3B;
-  --color-primary-light: #2D3561;
-  --color-primary-dark: #111428;
+  --color-primary: #0A0A0A;
+  --color-primary-light: #1A1A1A;
+  --color-primary-dark: #000000;
   --color-secondary: #C9A84C;
   --color-secondary-light: #D4B96A;
   --color-secondary-dark: #A8893D;
@@ -62,6 +62,13 @@ body {
 
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Hero carousel crossfade */
+@keyframes heroFade {
+  0%, 25% { opacity: 1; }
+  30%, 95% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /* GHL Chat Widget Custom Styling */
