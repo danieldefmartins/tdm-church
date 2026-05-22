@@ -83,7 +83,7 @@ export default function TdmKidsPage() {
     <>
       {/* Hero */}
       <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-pink-900 via-primary to-rose-900" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
         <div className="absolute inset-0">
           <Image
             src="/images/kids/kids-circle-smiling.jpg"
@@ -93,7 +93,7 @@ export default function TdmKidsPage() {
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-primary/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/30" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm border border-white/20 mb-6">
             <Baby className="w-4 h-4 text-secondary" />
@@ -158,7 +158,7 @@ export default function TdmKidsPage() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                   <div className="absolute bottom-4 left-4">
                     <div className="w-10 h-10 bg-white/90 rounded-xl flex items-center justify-center">
                       <activity.icon className="w-5 h-5 text-pink-500" />
@@ -166,7 +166,7 @@ export default function TdmKidsPage() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-primary">
+                  <h3 className="text-lg font-bold text-black">
                     {activity.title}
                   </h3>
                   <p className="mt-2 text-sm text-stone-500 leading-relaxed">
@@ -213,7 +213,7 @@ export default function TdmKidsPage() {
                 <p className="text-sm font-semibold text-secondary">
                   {group.range}
                 </p>
-                <h3 className="text-lg font-bold text-primary mt-1">
+                <h3 className="text-lg font-bold text-black mt-1">
                   {group.name}
                 </h3>
                 <p className="mt-2 text-sm text-stone-500 leading-relaxed">
@@ -233,8 +233,8 @@ export default function TdmKidsPage() {
               <div className="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-5">
                 <ShieldCheck className="w-7 h-7 text-green-600" />
               </div>
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-primary font-display">
-                Segurança em Primeiro Lugar
+              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-black font-display">
+                Segurança em Primeiro <span className="italic">Lugar</span>
               </h2>
               <p className="mt-4 text-stone-500 leading-relaxed">
                 A segurança dos seus filhos é nossa prioridade absoluta. Todos
@@ -266,7 +266,7 @@ export default function TdmKidsPage() {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
           </div>
         </div>
@@ -335,7 +335,7 @@ export default function TdmKidsPage() {
             className="object-cover opacity-15"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-br from-pink-900/95 via-primary/95 to-rose-900/95" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/95 via-black/95 to-black/90" />
         <div className="relative max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="w-14 h-14 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6">
             <Users className="w-7 h-7 text-secondary" />
@@ -349,7 +349,7 @@ export default function TdmKidsPage() {
           </p>
           <Link
             href="/contato"
-            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-secondary text-white font-bold rounded-xl hover:bg-secondary-dark transition-colors duration-700"
+            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-white/90 transition-colors duration-700"
           >
             Quero Ser Voluntário
             <ArrowRight className="w-4 h-4" />

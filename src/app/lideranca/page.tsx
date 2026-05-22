@@ -13,37 +13,37 @@ const leaders = [
     name: "Pr. Alexandre Mendes",
     role: "Pastor Presidente",
     bio: "Fundador da TDM Church, o Pastor Alexandre lidera a congregação desde 1996 com uma visão de fé, milagres e restauração. Sua paixão é ver vidas transformadas pelo poder de Deus.",
-    color: "from-primary to-primary-light",
+    color: "from-black to-neutral-800",
   },
   {
     name: "Pra. Rebecca Mendes",
     role: "Co-Pastora",
     bio: "Ao lado do Pastor Alexandre, a Pastora Rebecca é o coração da TDM Church. Seu ministério de acolhimento e cuidado pastoral toca profundamente cada família da congregação.",
-    color: "from-secondary to-secondary-light",
+    color: "from-secondary to-yellow-700",
   },
   {
     name: "Pr. Daniel Silva",
     role: "Pastor Associado — TDM Youth",
     bio: "Apaixonado pela nova geração, o Pastor Daniel lidera o ministério jovem com energia, criatividade e profundidade bíblica. Acredita que os jovens são o presente da igreja.",
-    color: "from-blue-600 to-indigo-700",
+    color: "from-black to-neutral-700",
   },
   {
     name: "Pra. Ana Costa",
     role: "Pastora Associada — TDM Kids",
     bio: "Com formação em educação infantil e um chamado ministerial, a Pastora Ana cuida dos pequenos com amor e dedicação, ensinando os princípios da fé de forma lúdica e segura.",
-    color: "from-pink-500 to-rose-600",
+    color: "from-black to-neutral-700",
   },
   {
     name: "Pr. Lucas Oliveira",
     role: "Pastor Associado — TDM Missions",
     bio: "O Pastor Lucas coordena as missões locais e internacionais da TDM Church. Sua visão missionária leva esperança e ajuda prática a comunidades ao redor do mundo.",
-    color: "from-emerald-600 to-teal-700",
+    color: "from-black to-neutral-700",
   },
   {
     name: "Pr. Marcos Santos",
     role: "Pastor Associado — Louvor e Adoração",
     bio: "Músico e adorador, o Pastor Marcos lidera o ministério de louvor com excelência e unção. Cada culto é uma experiência de adoração que marca a presença de Deus.",
-    color: "from-violet-600 to-purple-700",
+    color: "from-black to-neutral-700",
   },
 ];
 
@@ -51,15 +51,15 @@ export default function LiderancaPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary" />
+      <section className="relative py-28 sm:py-36 bg-black overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
         <div className="absolute inset-0 bg-[url('/images/pastor-alexandre-preaching.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-4">
+          <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-secondary mb-4">
             Nossos Líderes
           </p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white font-display">
-            Liderança que <span className="text-secondary">Inspira</span>
+            Liderança que <span className="text-secondary italic">Inspira</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
             Conheça os pastores e líderes que servem com amor, dedicação e o
@@ -81,7 +81,7 @@ export default function LiderancaPage() {
             {leaders.map((leader) => (
               <div
                 key={leader.name}
-                className="group bg-white rounded-2xl border border-stone-100 overflow-hidden hover:shadow-xl hover:border-secondary/30 transition-all duration-700"
+                className="group bg-white rounded-lg border border-stone-100 overflow-hidden hover:shadow-xl hover:border-secondary/30 transition-all duration-700"
               >
                 {/* Photo Placeholder */}
                 <div className="relative aspect-[4/3] overflow-hidden">
@@ -102,7 +102,7 @@ export default function LiderancaPage() {
                   <p className="text-xs font-semibold uppercase tracking-wider text-secondary mb-1">
                     {leader.role}
                   </p>
-                  <h3 className="text-xl font-bold text-primary font-display group-hover:text-secondary transition-colors duration-700">
+                  <h3 className="text-xl font-bold text-black font-display group-hover:text-secondary transition-colors duration-700">
                     {leader.name}
                   </h3>
                   <p className="mt-3 text-sm text-stone-500 leading-relaxed">
@@ -116,7 +116,7 @@ export default function LiderancaPage() {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-16 sm:py-20 bg-primary">
+      <section className="py-16 sm:py-20 bg-black">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="w-14 h-14 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6">
             <Mail className="w-7 h-7 text-secondary" />
@@ -130,7 +130,7 @@ export default function LiderancaPage() {
           </p>
           <a
             href="/contato"
-            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-secondary text-white font-bold rounded-xl hover:bg-secondary-dark transition-colors duration-700"
+            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-white/90 transition-colors duration-700"
           >
             <Mail className="w-5 h-5" />
             Entrar em Contato

@@ -46,8 +46,8 @@ export default function OfertasPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary" />
+      <section className="relative py-28 sm:py-36 bg-black overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
         <div className="absolute inset-0 bg-[url('/images/cross-blue-sunset.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -78,10 +78,10 @@ export default function OfertasPage() {
                 key={cat.title}
                 className="group bg-white rounded-2xl p-6 sm:p-8 border border-stone-100 hover:shadow-xl hover:border-secondary/30 transition-all duration-700 text-center cursor-pointer"
               >
-                <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:bg-secondary transition-colors duration-700">
+                <div className="w-14 h-14 bg-black rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:bg-secondary transition-colors duration-700">
                   <cat.icon className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-lg font-bold text-primary group-hover:text-secondary transition-colors">
+                <h3 className="text-lg font-bold text-black group-hover:text-secondary transition-colors">
                   {cat.title}
                 </h3>
                 <p className="mt-2 text-sm text-stone-500 leading-relaxed">
@@ -107,7 +107,7 @@ export default function OfertasPage() {
               {amounts.map((amount) => (
                 <button
                   key={amount}
-                  className="py-4 rounded-xl border-2 border-stone-200 text-primary font-bold text-lg hover:border-secondary hover:text-secondary transition-colors duration-300"
+                  className="py-4 rounded-xl border-2 border-stone-200 text-black font-bold text-lg hover:border-secondary hover:text-secondary transition-colors duration-300"
                 >
                   ${amount}
                 </button>
@@ -125,7 +125,7 @@ export default function OfertasPage() {
                 <input
                   type="number"
                   placeholder="0.00"
-                  className="w-full pl-8 pr-4 py-3 rounded-xl border border-stone-200 text-primary font-semibold focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-colors"
+                  className="w-full pl-8 pr-4 py-3 rounded-xl border border-stone-200 text-black font-semibold focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-colors"
                 />
               </div>
             </div>
@@ -160,7 +160,7 @@ export default function OfertasPage() {
                 Dados para Envio
               </p>
               <div className="bg-white rounded-xl p-6 border border-stone-200 inline-block">
-                <p className="text-lg font-bold text-primary">
+                <p className="text-lg font-bold text-black">
                   TDM Church — Templo dos Milagres
                 </p>
                 <p className="text-stone-500 mt-2">
@@ -180,7 +180,7 @@ export default function OfertasPage() {
       </section>
 
       {/* Trust */}
-      <section className="py-16 sm:py-20 bg-primary">
+      <section className="py-16 sm:py-20 bg-black">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <ShieldCheck className="w-12 h-12 text-secondary mx-auto mb-6" />
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-display">

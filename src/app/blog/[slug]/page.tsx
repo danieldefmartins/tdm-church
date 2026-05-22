@@ -54,8 +54,8 @@ export default async function BlogPostPage({ params }: PageProps) {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary" />
+      <section className="relative py-28 sm:py-36 bg-black overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
         <div className="relative max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <Link
             href="/blog"
@@ -106,7 +106,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 return (
                   <h2
                     key={i}
-                    className="text-2xl font-bold text-primary font-display mt-10 mb-4"
+                    className="text-2xl font-bold text-black font-display mt-10 mb-4"
                   >
                     {paragraph.replace("## ", "")}
                   </h2>
@@ -116,7 +116,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 return (
                   <h3
                     key={i}
-                    className="text-lg font-bold text-primary mt-8 mb-3"
+                    className="text-lg font-bold text-black mt-8 mb-3"
                   >
                     {paragraph.replace("### ", "")}
                   </h3>
@@ -181,16 +181,16 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <p
                   key={i}
                   className="text-stone-700 leading-relaxed my-4"
-                  dangerouslySetInnerHTML={{ __html: paragraph.replace(/\*\*(.*?)\*\*/g, "<strong class='text-primary'>$1</strong>") }}
+                  dangerouslySetInnerHTML={{ __html: paragraph.replace(/\*\*(.*?)\*\*/g, "<strong class='text-black'>$1</strong>") }}
                 />
               );
             })}
           </article>
 
           {/* Share CTA */}
-          <div className="mt-12 p-6 bg-primary/5 rounded-2xl border border-primary/10 text-center">
+          <div className="mt-12 p-6 bg-black/5 rounded-2xl border border-black/10 text-center">
             <Heart className="w-8 h-8 text-secondary mx-auto mb-3" />
-            <p className="font-bold text-primary">
+            <p className="font-bold text-black">
               Este artigo te abençoou?
             </p>
             <p className="text-stone-500 text-sm mt-1">
@@ -207,7 +207,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             {prevPost ? (
               <Link
                 href={`/blog/${prevPost.slug}`}
-                className="flex items-center gap-2 text-sm text-stone-500 hover:text-primary transition-colors"
+                className="flex items-center gap-2 text-sm text-stone-500 hover:text-black transition-colors"
               >
                 <ArrowLeft className="w-4 h-4" />
                 <span className="hidden sm:inline">{prevPost.title}</span>
@@ -219,7 +219,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             {nextPost ? (
               <Link
                 href={`/blog/${nextPost.slug}`}
-                className="flex items-center gap-2 text-sm text-stone-500 hover:text-primary transition-colors"
+                className="flex items-center gap-2 text-sm text-stone-500 hover:text-black transition-colors"
               >
                 <span className="hidden sm:inline">{nextPost.title}</span>
                 <span className="sm:hidden">Próximo</span>
@@ -236,7 +236,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       {relatedPosts.length > 0 && (
         <section className="py-14 sm:py-20 bg-cream">
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-            <h2 className="text-2xl font-bold text-primary font-display text-center mb-8">
+            <h2 className="text-2xl font-bold text-black font-display text-center mb-8">
               Artigos Relacionados
             </h2>
             <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -249,7 +249,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                   <span className="px-2.5 py-0.5 bg-secondary/10 text-secondary text-[10px] font-semibold rounded-full">
                     {related.category}
                   </span>
-                  <h3 className="font-bold text-primary group-hover:text-secondary transition-colors mt-3">
+                  <h3 className="font-bold text-black group-hover:text-secondary transition-colors mt-3">
                     {related.title}
                   </h3>
                   <p className="text-sm text-stone-500 mt-2 line-clamp-2">

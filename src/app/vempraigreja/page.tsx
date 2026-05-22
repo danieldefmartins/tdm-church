@@ -127,10 +127,10 @@ export default function VemPraIgrejaPage() {
   return (
     <>
       {/* ==================== HERO — ACOLHEDOR ==================== */}
-      <section className="relative min-h-screen flex items-center bg-primary overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary" />
+      <section className="relative min-h-screen flex items-center bg-black overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
         <div className="absolute inset-0 bg-[url('/images/hands-worship-golden.jpg')] bg-cover bg-center opacity-15" />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-primary/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
 
         <div className="relative max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-32 sm:py-40 text-center">
           <p className="text-secondary text-sm sm:text-base font-semibold tracking-[0.25em] uppercase mb-8">
@@ -194,10 +194,10 @@ export default function VemPraIgrejaPage() {
             <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-3">
               A gente entende
             </p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-primary font-display">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-black font-display">
               Talvez você esteja passando
               <br />
-              por um momento assim...
+              por um momento <span className="italic">assim...</span>
             </h2>
           </div>
 
@@ -224,14 +224,14 @@ export default function VemPraIgrejaPage() {
 
           <p className="mt-12 text-center text-lg sm:text-xl text-stone-500 leading-relaxed max-w-2xl mx-auto">
             Se você se identificou com alguma dessas situações, saiba que{" "}
-            <strong className="text-primary">você não está sozinho</strong>. E
+            <strong className="text-black">você não está sozinho</strong>. E
             existe um lugar preparado para te receber.
           </p>
         </div>
       </section>
 
       {/* ==================== VERSÍCULO 2 ==================== */}
-      <section className="py-14 sm:py-16 bg-primary">
+      <section className="py-14 sm:py-16 bg-black">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <p className="text-xl sm:text-2xl lg:text-3xl font-display font-bold text-white leading-snug italic">
             &ldquo;{verses[2].text}&rdquo;
@@ -249,8 +249,8 @@ export default function VemPraIgrejaPage() {
             <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-3">
               Braços Abertos
             </p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-primary font-display">
-              Por que vir pra igreja?
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-black font-display">
+              Por que vir pra <span className="italic">igreja?</span>
             </h2>
             <p className="mt-4 text-stone-500 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
               Não é sobre religião. É sobre relacionamento. É sobre encontrar
@@ -267,7 +267,7 @@ export default function VemPraIgrejaPage() {
                 <div className="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-secondary/20 transition-colors duration-500">
                   <reason.icon className="w-7 h-7 text-secondary" />
                 </div>
-                <h3 className="text-lg font-bold text-primary group-hover:text-secondary transition-colors duration-300">
+                <h3 className="text-lg font-bold text-black group-hover:text-secondary transition-colors duration-300">
                   {reason.title}
                 </h3>
                 <p className="mt-3 text-sm text-stone-500 leading-relaxed">
@@ -280,8 +280,8 @@ export default function VemPraIgrejaPage() {
       </section>
 
       {/* ==================== VERSÍCULO 3 — FULL WIDTH ==================== */}
-      <section className="relative py-20 sm:py-28 bg-primary overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-light/30 to-primary" />
+      <section className="relative py-20 sm:py-28 bg-black overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-black" />
         <div className="relative max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <Heart className="w-10 h-10 text-secondary mx-auto mb-6" />
           <p className="text-2xl sm:text-3xl lg:text-4xl font-display font-bold text-white leading-snug italic">
@@ -300,8 +300,8 @@ export default function VemPraIgrejaPage() {
             <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-3">
               O Que Você Vai Encontrar
             </p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-primary font-display">
-              Mais do que uma igreja
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-black font-display">
+              Mais do que uma <span className="italic">igreja</span>
             </h2>
             <p className="mt-4 text-stone-500 text-base sm:text-lg max-w-2xl mx-auto">
               Uma família. Uma comunidade. Um lugar onde sua vida ganha um novo
@@ -316,7 +316,7 @@ export default function VemPraIgrejaPage() {
                 className="bg-white rounded-2xl p-5 sm:p-6 border border-stone-100 hover:shadow-lg transition-shadow duration-300 text-center"
               >
                 <dept.icon className="w-8 h-8 text-secondary mx-auto mb-3" />
-                <h3 className="font-bold text-primary text-sm sm:text-base">
+                <h3 className="font-bold text-black text-sm sm:text-base">
                   {dept.name}
                 </h3>
                 <p className="text-xs sm:text-sm text-stone-500 mt-1.5 leading-relaxed">
@@ -336,10 +336,10 @@ export default function VemPraIgrejaPage() {
               <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-3">
                 Pode ficar tranquilo
               </p>
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-primary font-display">
+              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-black font-display">
                 É sua primeira vez
                 <br />
-                em uma igreja?
+                em uma <span className="italic">igreja?</span>
               </h2>
               <p className="mt-6 text-stone-500 text-base sm:text-lg leading-relaxed">
                 A gente entende que pode ser um passo grande. Mas queremos que
@@ -370,7 +370,7 @@ export default function VemPraIgrejaPage() {
                       <Heart className="w-3 h-3 text-secondary" />
                     </div>
                     <div>
-                      <p className="font-bold text-primary text-sm">
+                      <p className="font-bold text-black text-sm">
                         {item.title}
                       </p>
                       <p className="text-stone-500 text-sm mt-0.5">
@@ -382,7 +382,7 @@ export default function VemPraIgrejaPage() {
               </div>
             </div>
 
-            <div className="bg-primary rounded-2xl p-8 sm:p-10 text-center">
+            <div className="bg-black rounded-2xl p-8 sm:p-10 text-center">
               <p className="text-secondary text-xs font-semibold uppercase tracking-wider mb-4">
                 Nossos Cultos
               </p>
@@ -437,8 +437,8 @@ export default function VemPraIgrejaPage() {
             <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-3">
               Histórias Reais
             </p>
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-primary font-display">
-              Vidas que foram transformadas
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-black font-display">
+              Vidas que foram <span className="italic">transformadas</span>
             </h2>
           </div>
 
@@ -476,7 +476,7 @@ export default function VemPraIgrejaPage() {
                   &ldquo;{t.text}&rdquo;
                 </p>
                 <div className="mt-6 pt-4 border-t border-stone-100">
-                  <p className="font-bold text-primary text-sm">{t.name}</p>
+                  <p className="font-bold text-black text-sm">{t.name}</p>
                   <p className="text-stone-500 text-xs">{t.detail}</p>
                 </div>
               </div>
@@ -486,7 +486,7 @@ export default function VemPraIgrejaPage() {
       </section>
 
       {/* ==================== VERSÍCULO 5 ==================== */}
-      <section className="py-14 sm:py-16 bg-primary">
+      <section className="py-14 sm:py-16 bg-black">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <p className="text-xl sm:text-2xl lg:text-3xl font-display font-bold text-white leading-snug italic">
             &ldquo;{verses[3].text}&rdquo;
@@ -508,7 +508,7 @@ export default function VemPraIgrejaPage() {
 
             <div className="space-y-4 text-stone-700 text-base sm:text-lg leading-relaxed">
               <p>
-                <strong className="text-primary">Querido amigo, querida amiga,</strong>
+                <strong className="text-black">Querido amigo, querida amiga,</strong>
               </p>
               <p>
                 Eu sei que dar o primeiro passo pode parecer difícil. Talvez
@@ -534,9 +534,9 @@ export default function VemPraIgrejaPage() {
                 agora. Aqui, os braços estão abertos. Sempre.
               </p>
               <p className="mt-6">
-                <strong className="text-primary">Com amor,</strong>
+                <strong className="text-black">Com amor,</strong>
                 <br />
-                <span className="text-primary font-display text-xl font-bold">
+                <span className="text-black font-display text-xl font-bold">
                   Pastor Alexandre Mendes
                 </span>
               </p>
@@ -558,8 +558,8 @@ export default function VemPraIgrejaPage() {
       </section>
 
       {/* ==================== CTA FINAL ==================== */}
-      <section className="relative py-24 sm:py-32 bg-primary overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-light/20 to-primary" />
+      <section className="relative py-24 sm:py-32 bg-black overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-black" />
 
         <div className="relative max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <Heart className="w-12 h-12 text-secondary mx-auto mb-6" />

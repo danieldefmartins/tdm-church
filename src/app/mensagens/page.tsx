@@ -78,15 +78,15 @@ export default function MensagensPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary" />
+      <section className="relative py-28 sm:py-36 bg-black overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
         <div className="absolute inset-0 bg-[url('/images/worship-crowd-lights.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-4">
+          <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-secondary mb-4">
             Canal de Mensagens
           </p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white font-display">
-            Assista às <span className="text-secondary">Pregações</span>
+            Assista às <span className="text-secondary italic">Pregações</span>
           </h1>
           <p className="mt-6 text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
             Reviva os momentos mais poderosos dos nossos cultos. Mensagens que
@@ -106,7 +106,7 @@ export default function MensagensPage() {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${
                   activeCategory === cat
-                    ? "bg-primary text-white shadow-lg"
+                    ? "bg-black text-white shadow-lg"
                     : "bg-white text-stone-600 border border-stone-200 hover:border-secondary hover:text-secondary"
                 }`}
               >
@@ -132,19 +132,19 @@ export default function MensagensPage() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-primary/30 group-hover:bg-primary/10 transition-colors duration-700" />
+                  <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-700" />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-700 shadow-lg">
-                      <Play className="w-6 h-6 text-primary ml-0.5" />
+                      <Play className="w-6 h-6 text-black ml-0.5" />
                     </div>
                   </div>
                   <div className="absolute top-3 left-3">
-                    <span className="px-3 py-1 bg-primary/80 text-white text-[10px] font-semibold uppercase tracking-wider rounded-full backdrop-blur-sm">
+                    <span className="px-3 py-1 bg-black/80 text-white text-[10px] font-semibold uppercase tracking-wider rounded-full backdrop-blur-sm">
                       {sermon.category}
                     </span>
                   </div>
                 </div>
-                <h3 className="font-bold text-sm text-stone-900 group-hover:text-primary transition-colors line-clamp-2">
+                <h3 className="font-bold text-sm text-stone-900 group-hover:text-secondary transition-colors line-clamp-2">
                   {sermon.title}
                 </h3>
                 <p className="text-xs text-stone-500 mt-1">

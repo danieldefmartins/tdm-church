@@ -91,16 +91,16 @@ export default function QuemSomosPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary" />
+      <section className="relative py-28 sm:py-36 bg-black overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
         <div className="absolute inset-0 bg-[url('/images/cross-city-sunrise.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-4">
+          <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-secondary mb-4">
             Desde 1996
           </p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white font-display">
             Nossa História é de{" "}
-            <span className="text-secondary">Fé e Milagres</span>
+            <span className="text-secondary">Fé e <span className="italic">Milagres</span></span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
             Do chamado de um jovem pastor à construção de uma comunidade que
@@ -116,7 +116,7 @@ export default function QuemSomosPage() {
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <stat.icon className="w-6 h-6 text-secondary mx-auto mb-2" />
-                <p className="text-3xl sm:text-4xl font-bold text-primary font-display">
+                <p className="text-3xl sm:text-4xl font-bold text-black font-display">
                   {stat.value}
                 </p>
                 <p className="text-xs uppercase tracking-wider text-stone-500 mt-1">
@@ -133,10 +133,10 @@ export default function QuemSomosPage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
-              <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-3">
+              <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-secondary mb-3">
                 Nossa História
               </p>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-primary font-display">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-black font-display">
                 Um chamado que
                 <br />
                 mudou vidas
@@ -164,7 +164,7 @@ export default function QuemSomosPage() {
             </div>
 
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+              <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
                 <Image
                   src="/images/woman-worship.jpg"
                   alt="Momento de adoração na TDM Church"
@@ -206,7 +206,7 @@ export default function QuemSomosPage() {
                     <span className="text-sm font-bold text-secondary">
                       {item.year}
                     </span>
-                    <h3 className="text-lg font-bold text-primary mt-1">
+                    <h3 className="text-lg font-bold text-black mt-1">
                       {item.title}
                     </h3>
                     <p className="text-sm text-stone-500 mt-2 leading-relaxed">
@@ -221,7 +221,7 @@ export default function QuemSomosPage() {
       </section>
 
       {/* Mission / Vision */}
-      <section className="py-20 sm:py-28 bg-primary">
+      <section className="py-20 sm:py-28 bg-black">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <SectionHeading
             label="Propósito"
@@ -278,8 +278,8 @@ export default function QuemSomosPage() {
       {/* CTA */}
       <section className="py-20 sm:py-28 bg-warm-white">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-primary font-display">
-            Venha Fazer Parte Desta Família
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-black font-display">
+            Venha Fazer Parte Desta <span className="italic">Família</span>
           </h2>
           <p className="mt-4 text-stone-500 text-lg leading-relaxed">
             Não importa de onde você vem ou o que já viveu. Na TDM Church, há um
@@ -287,7 +287,7 @@ export default function QuemSomosPage() {
           </p>
           <a
             href="/contato"
-            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-secondary text-white font-bold rounded-xl hover:bg-secondary-dark transition-colors duration-700"
+            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-black text-white font-bold rounded-xl hover:bg-black/80 transition-colors duration-700"
           >
             Fale Conosco
             <ArrowRight className="w-4 h-4" />

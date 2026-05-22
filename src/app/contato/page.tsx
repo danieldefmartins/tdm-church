@@ -19,15 +19,15 @@ export default function ContatoPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary" />
+      <section className="relative py-28 sm:py-36 bg-black overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
         <div className="absolute inset-0 bg-[url('/images/church-building.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-4">
+          <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-secondary mb-4">
             Fale Conosco
           </p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white font-display">
-            Entre em <span className="text-secondary">Contato</span>
+            Entre em <span className="text-secondary italic">Contato</span>
           </h1>
           <p className="mt-6 text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
             Tem alguma dúvida, pedido de oração ou quer visitar a igreja?
@@ -61,7 +61,7 @@ export default function ContatoPage() {
                     id="name"
                     name="name"
                     placeholder="Seu nome"
-                    className="w-full px-4 py-3 rounded-xl border border-stone-200 text-primary focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-colors"
+                    className="w-full px-4 py-3 rounded-xl border border-stone-200 text-black focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-colors"
                   />
                 </div>
 
@@ -77,7 +77,7 @@ export default function ContatoPage() {
                     id="email"
                     name="email"
                     placeholder="seu@email.com"
-                    className="w-full px-4 py-3 rounded-xl border border-stone-200 text-primary focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-colors"
+                    className="w-full px-4 py-3 rounded-xl border border-stone-200 text-black focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-colors"
                   />
                 </div>
 
@@ -93,7 +93,7 @@ export default function ContatoPage() {
                     id="phone"
                     name="phone"
                     placeholder="(617) 000-0000"
-                    className="w-full px-4 py-3 rounded-xl border border-stone-200 text-primary focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-colors"
+                    className="w-full px-4 py-3 rounded-xl border border-stone-200 text-black focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-colors"
                   />
                 </div>
 
@@ -109,7 +109,7 @@ export default function ContatoPage() {
                     name="message"
                     rows={5}
                     placeholder="Escreva sua mensagem aqui..."
-                    className="w-full px-4 py-3 rounded-xl border border-stone-200 text-primary focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-colors resize-none"
+                    className="w-full px-4 py-3 rounded-xl border border-stone-200 text-black focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-colors resize-none"
                   />
                 </div>
 
@@ -137,7 +137,7 @@ export default function ContatoPage() {
                     <MapPin className="w-6 h-6 text-secondary" />
                   </div>
                   <div>
-                    <p className="font-bold text-primary">Endereço</p>
+                    <p className="font-bold text-black">Endereço</p>
                     <p className="text-sm text-stone-500 mt-1">
                       539 Salem St, Malden, MA 02148
                     </p>
@@ -149,7 +149,7 @@ export default function ContatoPage() {
                     <Phone className="w-6 h-6 text-secondary" />
                   </div>
                   <div>
-                    <p className="font-bold text-primary">Telefone</p>
+                    <p className="font-bold text-black">Telefone</p>
                     <a
                       href="tel:+16174042589"
                       className="text-sm text-stone-500 mt-1 hover:text-secondary transition-colors"
@@ -164,7 +164,7 @@ export default function ContatoPage() {
                     <Mail className="w-6 h-6 text-secondary" />
                   </div>
                   <div>
-                    <p className="font-bold text-primary">E-mail</p>
+                    <p className="font-bold text-black">E-mail</p>
                     <a
                       href="mailto:contato@tdmchurch.com"
                       className="text-sm text-stone-500 mt-1 hover:text-secondary transition-colors"
@@ -179,7 +179,7 @@ export default function ContatoPage() {
                     <Clock className="w-6 h-6 text-secondary" />
                   </div>
                   <div>
-                    <p className="font-bold text-primary">Horários dos Cultos</p>
+                    <p className="font-bold text-black">Horários dos Cultos</p>
                     <p className="text-sm text-stone-500 mt-1">
                       Domingo: 9:30 &amp; 19:00
                     </p>

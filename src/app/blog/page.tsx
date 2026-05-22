@@ -22,8 +22,8 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary" />
+      <section className="relative py-28 sm:py-36 bg-black overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="w-14 h-14 bg-secondary/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
             <BookOpen className="w-7 h-7 text-secondary" />
@@ -47,7 +47,7 @@ export default function BlogPage() {
                 key={cat}
                 className={`shrink-0 px-4 py-2 rounded-full text-sm font-medium cursor-pointer transition-colors ${
                   cat === "Todos"
-                    ? "bg-primary text-white"
+                    ? "bg-black text-white"
                     : "bg-stone-100 text-stone-600 hover:bg-stone-200"
                 }`}
               >
@@ -82,7 +82,7 @@ export default function BlogPage() {
                     {featured.readTime} de leitura
                   </span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-primary group-hover:text-secondary transition-colors font-display">
+                <h2 className="text-2xl sm:text-3xl font-bold text-black group-hover:text-secondary transition-colors font-display">
                   {featured.title}
                 </h2>
                 <p className="mt-3 text-stone-500 leading-relaxed">
@@ -127,7 +127,7 @@ export default function BlogPage() {
                       {post.readTime}
                     </span>
                   </div>
-                  <h3 className="font-bold text-primary group-hover:text-secondary transition-colors line-clamp-2">
+                  <h3 className="font-bold text-black group-hover:text-secondary transition-colors line-clamp-2">
                     {post.title}
                   </h3>
                   <p className="mt-2 text-sm text-stone-500 leading-relaxed line-clamp-3">

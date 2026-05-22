@@ -49,8 +49,8 @@ export default function TdmYouthPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-28 sm:py-40 bg-primary overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-primary to-indigo-900" />
+      <section className="relative py-28 sm:py-40 bg-black overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
         <div className="absolute inset-0 bg-[url('/images/worship-crowd-excited.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm border border-white/20 mb-6">
@@ -91,12 +91,12 @@ export default function TdmYouthPage() {
             {activities.map((activity) => (
               <div
                 key={activity.title}
-                className="group bg-white rounded-2xl p-6 sm:p-8 border border-stone-100 hover:shadow-xl hover:border-blue-200 transition-all duration-700 text-center"
+                className="group bg-white rounded-lg p-6 sm:p-8 border border-stone-100 hover:shadow-xl hover:border-secondary/30 transition-all duration-700 text-center"
               >
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-700">
+                <div className="w-14 h-14 bg-black rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-700">
                   <activity.icon className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-lg font-bold text-primary">
+                <h3 className="text-lg font-bold text-black">
                   {activity.title}
                 </h3>
                 <p className="mt-3 text-sm text-stone-500 leading-relaxed">
@@ -116,27 +116,27 @@ export default function TdmYouthPage() {
               <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-3">
                 Quando nos encontramos
               </p>
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-primary font-display">
-                Nossos Encontros
+              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-black font-display">
+                Nossos <span className="italic">Encontros</span>
               </h2>
               <div className="mt-8 space-y-4">
                 <div className="flex items-center gap-4 p-4 bg-white rounded-xl border border-stone-100">
-                  <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white">
+                  <div className="w-12 h-12 bg-black rounded-xl flex items-center justify-center text-white">
                     <Calendar className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="font-bold text-primary">Sexta-feira</p>
+                    <p className="font-bold text-black">Sexta-feira</p>
                     <p className="text-sm text-stone-500">
                       20:00 — Encontro Semanal do Youth
                     </p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 p-4 bg-white rounded-xl border border-stone-100">
-                  <div className="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center text-white">
+                  <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-white">
                     <Calendar className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="font-bold text-primary">Mensal</p>
+                    <p className="font-bold text-black">Mensal</p>
                     <p className="text-sm text-stone-500">
                       Worship Night — último sábado do mês
                     </p>
@@ -146,10 +146,10 @@ export default function TdmYouthPage() {
             </div>
 
             {/* Photo Placeholder */}
-            <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-blue-600/10 to-indigo-700/10 overflow-hidden shadow-xl flex items-center justify-center">
+            <div className="aspect-[4/3] rounded-lg bg-gradient-to-br from-black/10 to-secondary/10 overflow-hidden shadow-xl flex items-center justify-center">
               <div className="text-center">
-                <div className="w-20 h-20 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Rocket className="w-10 h-10 text-blue-600" />
+                <div className="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Rocket className="w-10 h-10 text-secondary" />
                 </div>
                 <p className="text-stone-500 text-sm">
                   Foto do youth aqui
@@ -161,7 +161,7 @@ export default function TdmYouthPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 sm:py-20 bg-gradient-to-br from-blue-900 via-primary to-indigo-900">
+      <section className="py-16 sm:py-20 bg-black">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-display">
             Sua Geração. Seu Momento.
@@ -172,7 +172,7 @@ export default function TdmYouthPage() {
           </p>
           <Link
             href="/contato"
-            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-secondary text-white font-bold rounded-xl hover:bg-secondary-dark transition-colors duration-700"
+            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-white/90 transition-colors duration-700"
           >
             Fale com a Gente
             <ArrowRight className="w-4 h-4" />

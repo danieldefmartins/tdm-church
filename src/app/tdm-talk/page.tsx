@@ -67,10 +67,10 @@ export default function TdmTalkPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-28 sm:py-36 bg-stone-900 overflow-hidden">
+      <section className="relative py-28 sm:py-36 bg-black overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 left-10 w-80 h-80 bg-secondary rounded-full blur-3xl" />
-          <div className="absolute bottom-10 right-10 w-64 h-64 bg-primary-light rounded-full blur-3xl" />
+          <div className="absolute bottom-10 right-10 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -112,7 +112,7 @@ export default function TdmTalkPage() {
             <div className="relative">
               <div className="aspect-square max-w-md mx-auto rounded-3xl border border-white/10 overflow-hidden relative">
                 <div className="absolute inset-0 bg-[url('/images/hand-worship-purple.jpg')] bg-cover bg-center" />
-                <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 to-stone-900/20" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/20" />
                 <div className="relative w-full h-full flex items-end justify-center p-8">
                   <div className="text-center">
                     <div className="w-16 h-16 bg-secondary/30 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
@@ -130,7 +130,7 @@ export default function TdmTalkPage() {
       </section>
 
       {/* Next Episode — Tiago Brunet */}
-      <section className="py-16 sm:py-20 bg-primary">
+      <section className="py-16 sm:py-20 bg-black">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 sm:p-10 border border-white/10">
             <div className="grid lg:grid-cols-2 gap-8 items-center">
@@ -205,7 +205,7 @@ export default function TdmTalkPage() {
                 href="#"
                 className="group flex items-center gap-4 sm:gap-6 bg-white rounded-2xl p-5 sm:p-6 border border-stone-100 hover:shadow-lg hover:border-secondary/30 transition-all duration-700"
               >
-                <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center shrink-0 group-hover:bg-secondary transition-colors duration-700">
+                <div className="w-14 h-14 bg-black rounded-xl flex items-center justify-center shrink-0 group-hover:bg-secondary transition-colors duration-700">
                   <Play className="w-6 h-6 text-white ml-0.5" />
                 </div>
                 <div className="flex-1 min-w-0">
@@ -217,7 +217,7 @@ export default function TdmTalkPage() {
                       {ep.date}
                     </span>
                   </div>
-                  <h3 className="font-bold text-primary group-hover:text-secondary transition-colors line-clamp-1">
+                  <h3 className="font-bold text-black group-hover:text-secondary transition-colors line-clamp-1">
                     {ep.title}
                   </h3>
                   <p className="text-sm text-stone-500 mt-0.5">

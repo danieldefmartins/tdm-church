@@ -104,15 +104,15 @@ export default function EventosPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary" />
+      <section className="relative py-28 sm:py-36 bg-black overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
         <div className="absolute inset-0 bg-[url('/images/worship-crowd-phones.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-4">
+          <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-secondary mb-4">
             Agenda
           </p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white font-display">
-            Próximos <span className="text-secondary">Eventos</span>
+            Próximos <span className="text-secondary italic">Eventos</span>
           </h1>
           <p className="mt-6 text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
             Não perca nenhum momento especial. Confira a programação completa
@@ -132,7 +132,7 @@ export default function EventosPage() {
               >
                 <div className="flex flex-col sm:flex-row gap-6">
                   {/* Date Box */}
-                  <div className="w-20 h-20 bg-primary rounded-2xl flex flex-col items-center justify-center text-white shrink-0 group-hover:bg-secondary transition-colors duration-700">
+                  <div className="w-20 h-20 bg-black rounded-2xl flex flex-col items-center justify-center text-white shrink-0 group-hover:bg-secondary transition-colors duration-700">
                     <span className="text-2xl font-bold leading-none">
                       {event.day}
                     </span>
@@ -153,7 +153,7 @@ export default function EventosPage() {
                         </span>
                       )}
                     </div>
-                    <h3 className="text-xl font-bold text-primary group-hover:text-secondary transition-colors">
+                    <h3 className="text-xl font-bold text-black group-hover:text-secondary transition-colors">
                       {event.title}
                     </h3>
                     <p className="mt-2 text-sm text-stone-500 leading-relaxed">
@@ -178,7 +178,7 @@ export default function EventosPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 sm:py-20 bg-primary">
+      <section className="py-16 sm:py-20 bg-black">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <Calendar className="w-12 h-12 text-secondary mx-auto mb-6" />
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-display">
@@ -190,7 +190,7 @@ export default function EventosPage() {
           </p>
           <Link
             href="/contato"
-            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-secondary text-white font-bold rounded-xl hover:bg-secondary-dark transition-colors duration-700"
+            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-white/90 transition-colors duration-700"
           >
             Fale Conosco
             <ArrowRight className="w-4 h-4" />

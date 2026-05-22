@@ -70,7 +70,7 @@ export default function TdmMissionsPage() {
     <>
       {/* Hero */}
       <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-primary to-teal-900" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
         <div className="absolute inset-0 bg-[url('/images/cross-sunset-dramatic.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm border border-white/20 mb-6">
@@ -93,7 +93,7 @@ export default function TdmMissionsPage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="text-3xl sm:text-4xl font-bold text-primary font-display">
+                <p className="text-3xl sm:text-4xl font-bold text-black font-display">
                   {stat.value}
                 </p>
                 <p className="text-xs uppercase tracking-wider text-stone-500 mt-1">
@@ -118,12 +118,12 @@ export default function TdmMissionsPage() {
             {missionAreas.map((area) => (
               <div
                 key={area.title}
-                className="group bg-white rounded-2xl p-6 sm:p-8 border border-stone-100 hover:shadow-xl hover:border-emerald-200 transition-all duration-700"
+                className="group bg-white rounded-lg p-6 sm:p-8 border border-stone-100 hover:shadow-xl hover:border-secondary/30 transition-all duration-700"
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-emerald-600 to-teal-700 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-700">
+                <div className="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-700">
                   <area.icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-lg font-bold text-primary group-hover:text-emerald-700 transition-colors">
+                <h3 className="text-lg font-bold text-black group-hover:text-secondary transition-colors">
                   {area.title}
                 </h3>
                 <p className="mt-2 text-sm text-stone-500 leading-relaxed">
@@ -169,10 +169,10 @@ export default function TdmMissionsPage() {
                 key={item.title}
                 className="bg-white rounded-2xl p-8 border border-stone-100 text-center hover:shadow-lg transition-shadow duration-700"
               >
-                <div className="w-14 h-14 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-5">
-                  <item.icon className="w-7 h-7 text-emerald-600" />
+                <div className="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-5">
+                  <item.icon className="w-7 h-7 text-secondary" />
                 </div>
-                <h3 className="text-xl font-bold text-primary">{item.title}</h3>
+                <h3 className="text-xl font-bold text-black">{item.title}</h3>
                 <p className="mt-3 text-sm text-stone-500 leading-relaxed">
                   {item.description}
                 </p>
@@ -183,7 +183,7 @@ export default function TdmMissionsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 sm:py-20 bg-gradient-to-br from-emerald-900 via-primary to-teal-900">
+      <section className="py-16 sm:py-20 bg-black">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-display">
             Faça Parte Desta Missão
@@ -195,7 +195,7 @@ export default function TdmMissionsPage() {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contato"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-secondary text-white font-bold rounded-xl hover:bg-secondary-dark transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-white/90 transition-colors"
             >
               Quero Participar
               <ArrowRight className="w-4 h-4" />

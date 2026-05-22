@@ -38,8 +38,8 @@ export default function CultosPage() {
   return (
     <>
       {/* Hero with Live Stream */}
-      <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary" />
+      <section className="relative py-28 sm:py-36 bg-black overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
         <div className="absolute inset-0 bg-[url('/images/worship-crowd-lights.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-12">
@@ -80,10 +80,10 @@ export default function CultosPage() {
                 key={service.day}
                 className="group bg-white rounded-2xl p-8 border border-stone-100 hover:shadow-xl hover:border-secondary/30 transition-all duration-700 text-center"
               >
-                <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:bg-secondary transition-colors duration-700">
+                <div className="w-14 h-14 bg-black rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:bg-secondary transition-colors duration-700">
                   <service.icon className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-lg font-bold text-primary">
+                <h3 className="text-lg font-bold text-black">
                   {service.day}
                 </h3>
                 <p className="text-4xl font-bold text-secondary font-display mt-2">
@@ -112,7 +112,7 @@ export default function CultosPage() {
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-semibold text-primary">Endereço</p>
+                    <p className="font-semibold text-black">Endereço</p>
                     <p className="text-stone-500 text-sm">
                       539 Salem St, Malden, MA 02148
                     </p>
@@ -121,7 +121,7 @@ export default function CultosPage() {
                 <div className="flex items-start gap-3">
                   <Clock className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-semibold text-primary">Horários</p>
+                    <p className="font-semibold text-black">Horários</p>
                     <p className="text-stone-500 text-sm">
                       Domingo: 9:30 &amp; 19:00
                     </p>
@@ -133,7 +133,7 @@ export default function CultosPage() {
                 href="https://maps.app.goo.gl/sXeS39Yrvdifd2tG6"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 mt-8 px-7 py-3.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-light transition-colors"
+                className="inline-flex items-center gap-2 mt-8 px-7 py-3.5 bg-black text-white font-semibold rounded-xl hover:bg-black/80 transition-colors"
               >
                 <MapPin className="w-4 h-4" />
                 Abrir no Google Maps
@@ -157,7 +157,7 @@ export default function CultosPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 sm:py-20 bg-primary">
+      <section className="py-16 sm:py-20 bg-black">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-display">
             Primeira Vez?
@@ -169,7 +169,7 @@ export default function CultosPage() {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/quem-somos"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-secondary text-white font-bold rounded-xl hover:bg-secondary-dark transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-white/90 transition-colors"
             >
               Conheça a Igreja
             </Link>

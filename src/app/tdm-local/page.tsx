@@ -64,7 +64,7 @@ export default function TdmLocalPage() {
     <>
       {/* Hero */}
       <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-violet-900 via-primary to-purple-900" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
         <div className="absolute inset-0 bg-[url('/images/israel-flag-field.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm border border-white/20 mb-6">
@@ -86,10 +86,10 @@ export default function TdmLocalPage() {
       {/* Compassionate Intro */}
       <section className="py-16 sm:py-20 bg-warm-white">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <div className="w-16 h-16 bg-violet-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            <ShieldCheck className="w-8 h-8 text-violet-600" />
+          <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <ShieldCheck className="w-8 h-8 text-secondary" />
           </div>
-          <h2 className="text-2xl sm:text-3xl font-bold text-primary font-display">
+          <h2 className="text-2xl sm:text-3xl font-bold text-black font-display">
             Um Porto Seguro Para Quem Chegou
           </h2>
           <p className="mt-4 text-stone-500 text-lg leading-relaxed">
@@ -114,12 +114,12 @@ export default function TdmLocalPage() {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="group bg-white rounded-2xl p-6 sm:p-8 border border-stone-100 hover:shadow-xl hover:border-violet-200 transition-all duration-700"
+                className="group bg-white rounded-lg p-6 sm:p-8 border border-stone-100 hover:shadow-xl hover:border-secondary/30 transition-all duration-700"
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-violet-600 to-purple-700 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-700">
+                <div className="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-700">
                   <service.icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-lg font-bold text-primary group-hover:text-violet-700 transition-colors">
+                <h3 className="text-lg font-bold text-black group-hover:text-secondary transition-colors">
                   {service.title}
                 </h3>
                 <p className="mt-2 text-sm text-stone-500 leading-relaxed">
@@ -132,7 +132,7 @@ export default function TdmLocalPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 sm:py-20 bg-gradient-to-br from-violet-900 via-primary to-purple-900">
+      <section className="py-16 sm:py-20 bg-black">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-display">
             Precisa de Ajuda?
@@ -144,7 +144,7 @@ export default function TdmLocalPage() {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contato"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-secondary text-white font-bold rounded-xl hover:bg-secondary-dark transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-white/90 transition-colors"
             >
               Fale Conosco
               <ArrowRight className="w-4 h-4" />

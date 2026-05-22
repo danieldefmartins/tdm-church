@@ -63,7 +63,7 @@ export default function TdmMastermindPage() {
     <>
       {/* Hero */}
       <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-amber-900 via-primary to-orange-900" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
         <div className="absolute inset-0 bg-[url('/images/cross-city-sunrise.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm border border-white/20 mb-6">
@@ -98,7 +98,7 @@ export default function TdmMastermindPage() {
       {/* Next Meeting */}
       <section className="bg-white border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-10">
-          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-8 border border-amber-100">
+          <div className="bg-gradient-to-r from-secondary/5 to-secondary/10 rounded-lg p-8 border border-secondary/20">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex items-center gap-6">
                 <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center shrink-0">
@@ -108,7 +108,7 @@ export default function TdmMastermindPage() {
                   <p className="text-xs font-semibold uppercase tracking-wider text-secondary">
                     Próximo Encontro
                   </p>
-                  <h3 className="text-xl font-bold text-primary mt-1">
+                  <h3 className="text-xl font-bold text-black mt-1">
                     TDM Mastermind Coffee
                   </h3>
                   <div className="flex flex-wrap items-center gap-4 mt-2">
@@ -145,10 +145,10 @@ export default function TdmMastermindPage() {
               <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-3">
                 O Que É
               </p>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-primary font-display">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-black font-display">
                 Café, Oração &amp;
                 <br />
-                Direção nos Negócios
+                Direção nos <span className="italic">Negócios</span>
               </h2>
               <p className="mt-6 text-base sm:text-lg text-stone-500 leading-relaxed">
                 O TDM Mastermind é um encontro quinzenal onde empresários e
@@ -171,7 +171,7 @@ export default function TdmMastermindPage() {
               </blockquote>
             </div>
 
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-amber-100 to-orange-50 flex items-center justify-center">
+            <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-xl bg-gradient-to-br from-secondary/10 to-secondary/5 flex items-center justify-center">
               <div className="text-center p-8">
                 <Coffee className="w-20 h-20 text-secondary/30 mx-auto mb-4" />
                 <p className="text-stone-400 text-sm">
@@ -196,12 +196,12 @@ export default function TdmMastermindPage() {
             {benefits.map((benefit) => (
               <div
                 key={benefit.title}
-                className="group bg-white rounded-2xl p-6 sm:p-8 border border-stone-100 hover:shadow-xl hover:border-amber-200 transition-all duration-700 text-center"
+                className="group bg-white rounded-lg p-6 sm:p-8 border border-stone-100 hover:shadow-xl hover:border-secondary/30 transition-all duration-700 text-center"
               >
-                <div className="w-14 h-14 bg-gradient-to-br from-amber-600 to-orange-700 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-700">
+                <div className="w-14 h-14 bg-black rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-700">
                   <benefit.icon className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-lg font-bold text-primary">
+                <h3 className="text-lg font-bold text-black">
                   {benefit.title}
                 </h3>
                 <p className="mt-3 text-sm text-stone-500 leading-relaxed">
@@ -214,10 +214,10 @@ export default function TdmMastermindPage() {
       </section>
 
       {/* Who is it for */}
-      <section className="py-16 sm:py-20 bg-primary">
+      <section className="py-16 sm:py-20 bg-black">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-10">
-            <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-3">
+            <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-secondary mb-3">
               Para Quem É
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-display">
@@ -293,7 +293,7 @@ export default function TdmMastermindPage() {
                   {step.time}
                 </span>
                 <div>
-                  <h3 className="font-bold text-primary">{step.title}</h3>
+                  <h3 className="font-bold text-black">{step.title}</h3>
                   <p className="text-sm text-stone-500 mt-1">
                     {step.description}
                   </p>
@@ -305,7 +305,7 @@ export default function TdmMastermindPage() {
       </section>
 
       {/* Versículo + CTA */}
-      <section className="relative py-16 sm:py-20 bg-gradient-to-br from-amber-900 via-primary to-orange-900 overflow-hidden">
+      <section className="relative py-16 sm:py-20 bg-black overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/cross-city-sunrise.jpg')] bg-cover bg-center opacity-10" />
         <div className="relative max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <Heart className="w-10 h-10 text-secondary mx-auto mb-6" />
@@ -328,7 +328,7 @@ export default function TdmMastermindPage() {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contato"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-secondary text-white font-bold rounded-xl hover:bg-secondary-dark transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-white/90 transition-colors"
             >
               Quero Participar
               <ArrowRight className="w-4 h-4" />

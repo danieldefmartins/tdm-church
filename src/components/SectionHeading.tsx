@@ -17,16 +17,14 @@ export default function SectionHeading({
     <div className={`mb-10 sm:mb-14 ${center ? "text-center" : ""}`}>
       {label && (
         <p
-          className={`text-xs sm:text-sm font-semibold uppercase tracking-wider mb-3 ${
-            light ? "text-secondary" : "text-secondary"
-          }`}
+          className={`text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] mb-3 text-secondary`}
         >
           {label}
         </p>
       )}
       <h2
         className={`text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight font-display ${
-          light ? "text-white" : "text-primary"
+          light ? "text-white" : "text-black"
         }`}
       >
         {title}
