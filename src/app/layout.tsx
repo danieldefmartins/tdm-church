@@ -35,11 +35,26 @@ export const metadata: Metadata = {
   openGraph: {
     title: "TDM Church — Templo dos Milagres",
     description:
-      "Uma comunidade de fé, cura e restauração espiritual desde 1996.",
+      "Uma comunidade de fé, cura e restauração espiritual desde 1996. Malden, MA.",
     url: "https://tdmchurch.com",
     siteName: "TDM Church",
     locale: "pt_BR",
     type: "website",
+    images: [
+      {
+        url: "/images/tdm-logo.png",
+        width: 512,
+        height: 512,
+        alt: "TDM Church — Templo dos Milagres",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "TDM Church — Templo dos Milagres",
+    description:
+      "Uma comunidade de fé, cura e restauração espiritual desde 1996. Malden, MA.",
+    images: ["/images/tdm-logo.png"],
   },
 };
 
