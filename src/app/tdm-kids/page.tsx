@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Baby,
   Heart,
@@ -25,24 +26,28 @@ const activities = [
     title: "Histórias Bíblicas",
     description:
       "As crianças aprendem as histórias da Bíblia de forma interativa e divertida, com dramatizações e recursos visuais.",
+    image: "/images/kids/kids-sitting-listening.jpg",
   },
   {
     icon: Music,
     title: "Louvor Kids",
     description:
       "Músicas e coreografias feitas especialmente para as crianças adorarem a Deus com alegria.",
+    image: "/images/kids/kids-dancing-worship.jpg",
   },
   {
     icon: Palette,
     title: "Atividades Criativas",
     description:
       "Artes, jogos e atividades manuais que reforçam o aprendizado bíblico de cada semana.",
+    image: "/images/kids/kids-eating-party.jpg",
   },
   {
     icon: Heart,
     title: "Discipulado Infantil",
     description:
       "Formação de caráter e valores cristãos de forma apropriada para cada faixa etária.",
+    image: "/images/kids/kids-holding-hands.jpg",
   },
 ];
 
@@ -50,7 +55,8 @@ const ageGroups = [
   {
     range: "0–2 anos",
     name: "Berçário",
-    description: "Cuidado especial com os bebês em ambiente seguro e acolhedor.",
+    description:
+      "Cuidado especial com os bebês em ambiente seguro e acolhedor.",
   },
   {
     range: "3–5 anos",
@@ -78,7 +84,16 @@ export default function TdmKidsPage() {
       {/* Hero */}
       <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-pink-900 via-primary to-rose-900" />
-        <div className="absolute inset-0 bg-[url('/images/cross-blue-sunset.jpg')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0">
+          <Image
+            src="/images/kids/kids-circle-smiling.jpg"
+            alt="Crianças sorrindo em círculo"
+            fill
+            className="object-cover opacity-25"
+            priority
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-primary/30" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm border border-white/20 mb-6">
             <Baby className="w-4 h-4 text-secondary" />
@@ -96,7 +111,32 @@ export default function TdmKidsPage() {
         </div>
       </section>
 
-      {/* Activities */}
+      {/* Photo strip */}
+      <section className="bg-white py-4 overflow-hidden">
+        <div className="flex gap-2 sm:gap-3">
+          {[
+            { src: "/images/kids/kids-dancing-worship.jpg", alt: "Crianças adorando" },
+            { src: "/images/kids/girl-hands-up.jpg", alt: "Menina com mãos levantadas" },
+            { src: "/images/kids/kids-celebration-music.jpg", alt: "Crianças celebrando com música" },
+            { src: "/images/kids/kids-watching-together.jpg", alt: "Crianças assistindo juntas" },
+            { src: "/images/kids/kids-eating-party.jpg", alt: "Crianças lanchando" },
+          ].map((img) => (
+            <div
+              key={img.src}
+              className="relative w-1/5 aspect-[4/3] rounded-lg sm:rounded-xl overflow-hidden shrink-0"
+            >
+              <Image
+                src={img.src}
+                alt={img.alt}
+                fill
+                className="object-cover"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Activities with photos */}
       <section className="py-20 sm:py-28 bg-warm-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <SectionHeading
@@ -105,24 +145,50 @@ export default function TdmKidsPage() {
             description="Cada domingo é uma aventura de fé com atividades pensadas para encantar e ensinar os pequenos."
           />
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
             {activities.map((activity) => (
               <div
                 key={activity.title}
-                className="group bg-white rounded-2xl p-6 sm:p-8 border border-stone-100 hover:shadow-xl hover:border-pink-200 transition-all duration-700 text-center"
+                className="group bg-white rounded-2xl border border-stone-100 hover:shadow-xl hover:border-pink-200 transition-all duration-500 overflow-hidden"
               >
-                <div className="w-14 h-14 bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-700">
-                  <activity.icon className="w-7 h-7 text-white" />
+                <div className="relative aspect-[16/9] overflow-hidden">
+                  <Image
+                    src={activity.image}
+                    alt={activity.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
+                  <div className="absolute bottom-4 left-4">
+                    <div className="w-10 h-10 bg-white/90 rounded-xl flex items-center justify-center">
+                      <activity.icon className="w-5 h-5 text-pink-500" />
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-lg font-bold text-primary">
-                  {activity.title}
-                </h3>
-                <p className="mt-3 text-sm text-stone-500 leading-relaxed">
-                  {activity.description}
-                </p>
+                <div className="p-6">
+                  <h3 className="text-lg font-bold text-primary">
+                    {activity.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-stone-500 leading-relaxed">
+                    {activity.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Versículo */}
+      <section className="py-12 sm:py-14 bg-secondary">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+          <p className="text-xl sm:text-2xl font-display font-bold text-primary italic leading-snug">
+            &ldquo;Instrui o menino no caminho em que deve andar, e até quando
+            envelhecer não se desviará dele.&rdquo;
+          </p>
+          <p className="mt-3 text-primary/60 font-semibold text-xs uppercase tracking-wider">
+            Provérbios 22:6
+          </p>
         </div>
       </section>
 
@@ -159,7 +225,7 @@ export default function TdmKidsPage() {
         </div>
       </section>
 
-      {/* Safety */}
+      {/* Safety with real photo */}
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -183,28 +249,94 @@ export default function TdmKidsPage() {
                   "Ambiente limpo e adequado para crianças",
                   "Supervisão constante em todas as atividades",
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-sm text-stone-600">
+                  <li
+                    key={item}
+                    className="flex items-center gap-3 text-sm text-stone-600"
+                  >
                     <ShieldCheck className="w-4 h-4 text-green-500 shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-pink-500/10 to-rose-600/10 flex items-center justify-center shadow-xl">
-              <div className="text-center">
-                <div className="w-20 h-20 bg-pink-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Baby className="w-10 h-10 text-pink-500" />
-                </div>
-                <p className="text-stone-500 text-sm">Foto do kids aqui</p>
-              </div>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src="/images/kids/adult-child-hand.jpg"
+                alt="Adulto segurando a mão de uma criança — segurança e cuidado"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery mosaic */}
+      <section className="py-16 sm:py-20 bg-cream">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <SectionHeading
+            label="Galeria"
+            title="Momentos Especiais no TDM Kids"
+          />
+
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden group col-span-2 lg:col-span-1 lg:row-span-2">
+              <Image
+                src="/images/kids/kids-circle-smiling.jpg"
+                alt="Crianças multiculturais sorrindo"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden group">
+              <Image
+                src="/images/kids/kids-sitting-listening.jpg"
+                alt="Crianças ouvindo atentamente"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden group">
+              <Image
+                src="/images/kids/kids-celebration-music.jpg"
+                alt="Crianças celebrando com instrumentos musicais"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden group">
+              <Image
+                src="/images/kids/girl-hands-up.jpg"
+                alt="Menina com mãos levantadas adorando"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden group">
+              <Image
+                src="/images/kids/kids-watching-together.jpg"
+                alt="Crianças assistindo juntas"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* Volunteer CTA */}
-      <section className="py-16 sm:py-20 bg-gradient-to-br from-pink-900 via-primary to-rose-900">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+      <section className="relative py-16 sm:py-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/kids/kids-dancing-worship.jpg"
+            alt="Crianças adorando"
+            fill
+            className="object-cover opacity-15"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-pink-900/95 via-primary/95 to-rose-900/95" />
+        <div className="relative max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="w-14 h-14 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6">
             <Users className="w-7 h-7 text-secondary" />
           </div>
