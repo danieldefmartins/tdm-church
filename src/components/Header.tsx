@@ -70,11 +70,11 @@ export default function Header() {
                 height={48}
                 className="w-10 h-10 lg:w-12 lg:h-12 rounded-full object-cover"
               />
-              <div className="hidden sm:block">
-                <p className="text-primary font-bold text-lg lg:text-xl tracking-tight leading-none">
+              <div>
+                <p className="text-primary font-bold text-sm sm:text-lg lg:text-xl tracking-tight leading-none">
                   TDM Church
                 </p>
-                <p className="text-stone-500 text-[10px] lg:text-xs tracking-wider uppercase">
+                <p className="text-stone-500 text-[9px] sm:text-[10px] lg:text-xs tracking-wider uppercase">
                   Templo dos Milagres
                 </p>
               </div>
