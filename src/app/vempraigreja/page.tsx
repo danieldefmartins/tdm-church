@@ -129,7 +129,7 @@ export default function VemPraIgrejaPage() {
       {/* ==================== HERO — ACOLHEDOR ==================== */}
       <section className="relative min-h-screen flex items-center bg-primary overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary" />
-        <div className="absolute inset-0 bg-[url('/images/church-bg.jpg')] bg-cover bg-center opacity-10" />
+        <div className="absolute inset-0 bg-[url('/images/hands-worship-golden.jpg')] bg-cover bg-center opacity-15" />
         <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-primary/30" />
 
         <div className="relative max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-32 sm:py-40 text-center">
@@ -498,8 +498,9 @@ export default function VemPraIgrejaPage() {
       </section>
 
       {/* ==================== CARTA DO PASTOR ==================== */}
-      <section className="py-20 sm:py-28 bg-cream">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12">
+      <section className="relative py-20 sm:py-28 bg-cream overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/images/woman-worship.jpg')] bg-cover bg-center opacity-5" />
+        <div className="relative max-w-3xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="bg-white rounded-3xl p-8 sm:p-12 border border-stone-100 shadow-sm">
             <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-6">
               Uma palavra do Pastor

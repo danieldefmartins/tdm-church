@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import {
   Clock,
   MapPin,
@@ -92,7 +93,7 @@ export default function QuemSomosPage() {
       {/* Hero */}
       <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary" />
-        <div className="absolute inset-0 bg-[url('/images/church-bg.jpg')] bg-cover bg-center opacity-10" />
+        <div className="absolute inset-0 bg-[url('/images/cross-city-sunrise.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-4">
             Desde 1996
@@ -163,17 +164,14 @@ export default function QuemSomosPage() {
             </div>
 
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 overflow-hidden shadow-xl">
-                <div className="w-full h-full bg-primary/5 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <BookOpen className="w-10 h-10 text-secondary" />
-                    </div>
-                    <p className="text-stone-500 text-sm">
-                      Foto da igreja aqui
-                    </p>
-                  </div>
-                </div>
+              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src="/images/woman-worship.jpg"
+                  alt="Momento de adoração na TDM Church"
+                  width={800}
+                  height={600}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

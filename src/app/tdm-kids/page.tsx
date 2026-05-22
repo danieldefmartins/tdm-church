@@ -78,10 +78,7 @@ export default function TdmKidsPage() {
       {/* Hero */}
       <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-pink-900 via-primary to-rose-900" />
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 right-20 w-64 h-64 bg-pink-400 rounded-full blur-3xl" />
-          <div className="absolute bottom-10 left-20 w-80 h-80 bg-rose-500 rounded-full blur-3xl" />
-        </div>
+        <div className="absolute inset-0 bg-[url('/images/cross-blue-sunset.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm border border-white/20 mb-6">
             <Baby className="w-4 h-4 text-secondary" />

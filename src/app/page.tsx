@@ -327,10 +327,13 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="aspect-video rounded-2xl bg-white/5 border border-white/10 overflow-hidden flex items-center justify-center">
-              <div className="text-center">
-                <Play className="w-16 h-16 text-secondary mx-auto mb-3" />
-                <p className="text-white/50 text-sm">Livestream embed aqui</p>
+            <div className="relative aspect-video rounded-2xl overflow-hidden">
+              <div className="absolute inset-0 bg-[url('/images/worship-crowd-hands.jpg')] bg-cover bg-center" />
+              <div className="absolute inset-0 bg-primary/40" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center">
+                  <Play className="w-7 h-7 text-primary ml-0.5" />
+                </div>
               </div>
             </div>
           </div>
@@ -433,17 +436,18 @@ export default function Home() {
             </div>
 
             <div className="relative">
-              <div className="aspect-square max-w-md mx-auto rounded-3xl bg-gradient-to-br from-secondary/20 to-primary-light/30 border border-white/10 flex items-center justify-center overflow-hidden">
-                <div className="text-center p-8">
-                  <div className="w-24 h-24 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Headphones className="w-12 h-12 text-secondary" />
+              <div className="aspect-square max-w-md mx-auto rounded-3xl border border-white/10 overflow-hidden relative">
+                <div className="absolute inset-0 bg-[url('/images/hand-worship-purple.jpg')] bg-cover bg-center" />
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 to-stone-900/20" />
+                <div className="relative w-full h-full flex items-end justify-center p-8">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-secondary/30 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Headphones className="w-8 h-8 text-white" />
+                    </div>
+                    <p className="text-white font-bold text-2xl font-display">
+                      TDM Talk
+                    </p>
                   </div>
-                  <p className="text-white font-bold text-2xl font-display">
-                    TDM Talk
-                  </p>
-                  <p className="text-white/50 text-sm mt-2">
-                    Podcast cover art
-                  </p>
                 </div>
               </div>
             </div>
@@ -541,8 +545,9 @@ export default function Home() {
       </section>
 
       {/* ==================== OFFERING CTA ==================== */}
-      <section className="py-16 sm:py-20 bg-primary">
-        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+      <section className="relative py-16 sm:py-20 bg-primary overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/images/cross-sunset-dramatic.jpg')] bg-cover bg-center opacity-15" />
+        <div className="relative max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6">
             <Heart className="w-8 h-8 text-secondary" />
           </div>

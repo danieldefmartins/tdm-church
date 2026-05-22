@@ -48,6 +48,7 @@ export default function OfertasPage() {
       {/* Hero */}
       <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary" />
+        <div className="absolute inset-0 bg-[url('/images/cross-blue-sunset.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6">
             <Heart className="w-8 h-8 text-secondary" />

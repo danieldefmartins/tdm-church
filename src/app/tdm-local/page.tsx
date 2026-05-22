@@ -65,10 +65,7 @@ export default function TdmLocalPage() {
       {/* Hero */}
       <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-violet-900 via-primary to-purple-900" />
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 left-20 w-72 h-72 bg-violet-500 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-20 w-80 h-80 bg-purple-600 rounded-full blur-3xl" />
-        </div>
+        <div className="absolute inset-0 bg-[url('/images/israel-flag-field.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm border border-white/20 mb-6">
             <HandHeart className="w-4 h-4 text-secondary" />

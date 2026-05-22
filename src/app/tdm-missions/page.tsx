@@ -71,10 +71,7 @@ export default function TdmMissionsPage() {
       {/* Hero */}
       <section className="relative py-28 sm:py-36 bg-primary overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-primary to-teal-900" />
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 left-20 w-80 h-80 bg-emerald-500 rounded-full blur-3xl" />
-          <div className="absolute bottom-10 right-10 w-64 h-64 bg-teal-600 rounded-full blur-3xl" />
-        </div>
+        <div className="absolute inset-0 bg-[url('/images/cross-sunset-dramatic.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm border border-white/20 mb-6">
             <Globe className="w-4 h-4 text-secondary" />
