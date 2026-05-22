@@ -131,7 +131,7 @@ const upcomingEvents = [
   {
     title: "Culto de Domingo",
     date: "25 Mai",
-    time: "9:30 & 19:00",
+    time: "9:30",
     description: "Venha adorar conosco neste domingo especial.",
   },
   {
@@ -160,7 +160,7 @@ export default function Home() {
             <div className="flex items-center gap-3 mb-6">
               <LiveBadge />
               <span className="text-white/60 text-sm">
-                Domingos 9:30 &amp; 19h
+                Domingos 9:30 &amp; Quartas 20h
               </span>
             </div>
 
@@ -204,7 +204,7 @@ export default function Home() {
                   Domingo
                 </p>
                 <p className="text-lg font-bold text-white">
-                  9:30 &amp; 19:00
+                  9:30
                 </p>
               </div>
               <div className="w-px h-8 bg-white/10 hidden sm:block" />
@@ -212,7 +212,7 @@ export default function Home() {
                 <p className="text-[10px] font-semibold uppercase tracking-widest text-secondary">
                   Quarta-feira
                 </p>
-                <p className="text-lg font-bold text-white">19:45</p>
+                <p className="text-lg font-bold text-white">20:00</p>
               </div>
               <div className="w-px h-8 bg-white/10 hidden sm:block" />
               <div className="text-center sm:text-left">
@@ -316,7 +316,7 @@ export default function Home() {
             <div className="mt-6 flex flex-wrap gap-4">
               <div className="flex items-center gap-2 text-white/50 text-sm">
                 <Clock className="w-4 h-4 text-secondary" />
-                <span>9:30 &amp; 19:00</span>
+                <span>9:30</span>
               </div>
               <div className="flex items-center gap-2 text-white/50 text-sm">
                 <Users className="w-4 h-4 text-secondary" />
@@ -633,9 +633,9 @@ export default function Home() {
                   <div>
                     <p className="font-bold text-black text-sm">Horários</p>
                     <p className="text-stone-500 text-sm">
-                      Domingo: 9:30 &amp; 19:00
+                      Domingo: 9:30
                     </p>
-                    <p className="text-stone-500 text-sm">Quarta: 19:45</p>
+                    <p className="text-stone-500 text-sm">Quarta: 20:00</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">

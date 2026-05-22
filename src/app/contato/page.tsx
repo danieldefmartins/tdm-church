@@ -181,9 +181,9 @@ export default function ContatoPage() {
                   <div>
                     <p className="font-bold text-black">Horários dos Cultos</p>
                     <p className="text-sm text-stone-500 mt-1">
-                      Domingo: 9:30 &amp; 19:00
+                      Domingo: 9:30
                     </p>
-                    <p className="text-sm text-stone-500">Quarta: 19:45</p>
+                    <p className="text-sm text-stone-500">Quarta: 20:00</p>
                   </div>
                 </div>
               </div>

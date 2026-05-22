@@ -223,7 +223,7 @@ Então este é o momento perfeito para começar. Na TDM Church:
 ---
 
 **TDM Church — Templo dos Milagres**
-Cultos: Domingos 9:30 e 19h | Quartas 19:45
+Cultos: Domingos 9:30 | Quartas 20h
 539 Salem St, Malden, MA 02148 | (781) 480-3125`,
   },
   {
@@ -359,6 +359,6 @@ O terceiro fio é Deus. Quando Ele está no centro da família, nada pode destru
 ---
 
 A TDM Church tem ministérios para **toda a família**: TDM Kids, TDM Youth, encontros de casais e muito mais. Venha nos visitar!
-**Domingos 9:30 e 19h** | **539 Salem St, Malden, MA** | **(781) 480-3125**`,
+**Domingos 9:30** | **539 Salem St, Malden, MA** | **(781) 480-3125**`,
   },
 ];

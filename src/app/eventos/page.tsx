@@ -25,7 +25,7 @@ const events = [
     date: "25 Mai",
     day: "25",
     month: "Mai",
-    time: "9:30 & 19:00",
+    time: "9:30",
     description:
       "Culto de celebração com louvor, adoração e pregação da Palavra de Deus. Venha adorar conosco!",
     location: "TDM Church, 539 Salem St, Malden MA",
@@ -38,7 +38,7 @@ const events = [
     date: "28 Mai",
     day: "28",
     month: "Mai",
-    time: "19:45",
+    time: "20:00",
     description:
       "Estudo bíblico aprofundado e momento de oração e intercessão pela igreja e famílias.",
     location: "TDM Church, 539 Salem St, Malden MA",

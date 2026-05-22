@@ -53,7 +53,7 @@ export default function Header() {
           539 Salem St, Malden, MA
         </span>
         <span className="hidden md:inline text-white/70">
-          Dom 9:30 & 19h &middot; Qua 19:45
+          Dom 9:30 &middot; Qua 20h
         </span>
       </div>
 

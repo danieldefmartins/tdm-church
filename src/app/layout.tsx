@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | TDM Church",
   },
   description:
-    "Uma comunidade de fé, cura e restauração espiritual. Fundada em 1996 em Malden, MA. Cultos aos domingos às 9:30 e 19h, quartas às 19:45.",
+    "Uma comunidade de fé, cura e restauração espiritual. Fundada em 1996 em Malden, MA. Cultos aos domingos às 9:30 e quartas às 20h.",
   keywords: [
     "TDM Church",
     "Templo dos Milagres",

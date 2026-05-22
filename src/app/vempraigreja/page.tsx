@@ -390,14 +390,14 @@ export default function VemPraIgrejaPage() {
                 <div>
                   <p className="text-white/50 text-sm">Domingo</p>
                   <p className="text-2xl sm:text-3xl font-bold text-white">
-                    9:30 &amp; 19:00
+                    9:30
                   </p>
                 </div>
                 <div className="w-12 h-px bg-white/10 mx-auto" />
                 <div>
                   <p className="text-white/50 text-sm">Quarta-feira</p>
                   <p className="text-2xl sm:text-3xl font-bold text-white">
-                    19:45
+                    20:00
                   </p>
                 </div>
                 <div className="w-12 h-px bg-white/10 mx-auto" />
@@ -597,7 +597,7 @@ export default function VemPraIgrejaPage() {
           <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 text-white/50 text-sm">
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4 text-secondary" />
-              <span>Dom 9:30 &amp; 19h | Qua 19:45</span>
+              <span>Dom 9:30 | Qua 20h</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4 text-secondary" />

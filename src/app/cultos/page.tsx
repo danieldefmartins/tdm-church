@@ -8,7 +8,7 @@ import YouTubeEmbed from "@/components/YouTubeEmbed";
 export const metadata: Metadata = {
   title: "Cultos",
   description:
-    "Assista aos cultos ao vivo da TDM Church. Domingos às 9:30 e 19h, quartas às 19:45. Transmissão ao vivo pelo YouTube.",
+    "Assista aos cultos ao vivo da TDM Church. Domingos às 9:30 e quartas às 20h. Transmissão ao vivo pelo YouTube.",
 };
 
 const serviceTimes = [
@@ -19,15 +19,8 @@ const serviceTimes = [
     icon: Music,
   },
   {
-    day: "Domingo Noite",
-    time: "19:00",
-    description:
-      "Culto da Família — Um momento especial de ensino e comunhão.",
-    icon: Users,
-  },
-  {
     day: "Quarta-feira",
-    time: "19:45",
+    time: "20:00",
     description:
       "Culto de Oração e Estudo — Aprofundamento na Palavra e intercessão.",
     icon: BookOpen,
@@ -123,9 +116,9 @@ export default function CultosPage() {
                   <div>
                     <p className="font-semibold text-black">Horários</p>
                     <p className="text-stone-500 text-sm">
-                      Domingo: 9:30 &amp; 19:00
+                      Domingo: 9:30
                     </p>
-                    <p className="text-stone-500 text-sm">Quarta: 19:45</p>
+                    <p className="text-stone-500 text-sm">Quarta: 20:00</p>
                   </div>
                 </div>
               </div>
