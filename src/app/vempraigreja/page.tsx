@@ -102,15 +102,15 @@ export default function VemPraIgrejaPage() {
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          className="absolute inset-0 w-full h-full object-cover opacity-70"
         >
           <source
             src="/images/Photos-Videos/Vem-Pra-Igreja1.mp4"
             type="video/mp4"
           />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/20" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
 
         <div className="relative max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-32 sm:py-40 text-center">
           <p className="text-secondary text-[10px] sm:text-xs font-semibold tracking-[0.3em] uppercase mb-8">
@@ -149,6 +149,21 @@ export default function VemPraIgrejaPage() {
               Continue lendo
             </span>
             <div className="w-px h-12 bg-gradient-to-b from-secondary/40 to-transparent" />
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== PHOTO BREAK — WORSHIP ==================== */}
+      <section className="bg-black py-1">
+        <div className="grid grid-cols-3 gap-1">
+          <div className="relative aspect-square overflow-hidden">
+            <Image src="/images/Photos-Videos/Culto-de-mulheres2.jpg" alt="Adoração" fill className="object-cover" />
+          </div>
+          <div className="relative aspect-square overflow-hidden">
+            <Image src="/images/Photos-Videos/548296443_18401838529143219_902555118183139563_n.jpg" alt="Jovem adorando" fill className="object-cover" />
+          </div>
+          <div className="relative aspect-square overflow-hidden">
+            <Image src="/images/Photos-Videos/Pr-Alexandre.jpg" alt="Pastor Alexandre" fill className="object-cover" />
           </div>
         </div>
       </section>
@@ -208,17 +223,17 @@ export default function VemPraIgrejaPage() {
         </div>
       </section>
 
-      {/* ==================== VIDEO EMOCIONAL 1 ==================== */}
-      <section className="bg-black">
+      {/* ==================== VIDEO EMOCIONAL 1 — QUASE 9:16 ==================== */}
+      <section className="bg-black flex justify-center">
         <ScrollVideo
           src="/images/Photos-Videos/Vem-Pra-Igreja2.mp4"
-          className="w-full aspect-video sm:aspect-[2.5/1]"
+          className="w-full max-w-2xl aspect-[3/4] sm:aspect-[3/4]"
         >
           <div className="text-center px-6">
-            <p className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white font-display drop-shadow-2xl">
+            <p className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display drop-shadow-2xl">
               <span className="italic">&ldquo;Vinde a mim,</span>
               <br />
-              <span className="text-secondary">todos os que estais cansados&rdquo;</span>
+              <span className="text-secondary">todos os que estais<br />cansados&rdquo;</span>
             </p>
             <p className="mt-4 text-white/60 text-sm uppercase tracking-[0.2em] drop-shadow-lg">
               Mateus 11:28
@@ -364,11 +379,11 @@ export default function VemPraIgrejaPage() {
         </div>
       </section>
 
-      {/* ==================== VIDEO EMOCIONAL 2 ==================== */}
-      <section className="bg-black">
+      {/* ==================== VIDEO EMOCIONAL 2 — QUASE 9:16 ==================== */}
+      <section className="bg-black flex justify-center">
         <ScrollVideo
           src="/images/Photos-Videos/Vem-Pra-Igreja3.mp4"
-          className="w-full aspect-video sm:aspect-[2.5/1]"
+          className="w-full max-w-2xl aspect-[3/4] sm:aspect-[3/4]"
         >
           <div className="text-center px-6">
             <p className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display drop-shadow-2xl">
@@ -534,6 +549,40 @@ export default function VemPraIgrejaPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== VIDEO EMOCIONAL 3 ==================== */}
+      <section className="bg-black flex justify-center">
+        <ScrollVideo
+          src="/images/Photos-Videos/Vem-Pra-Igreja1.mp4"
+          className="w-full max-w-2xl aspect-[3/4] sm:aspect-[3/4]"
+        >
+          <div className="text-center px-6">
+            <p className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display drop-shadow-2xl">
+              Sua história de fé
+              <br />
+              <span className="italic text-secondary">começa aqui</span>
+            </p>
+          </div>
+        </ScrollVideo>
+      </section>
+
+      {/* ==================== PHOTO BREAK — COMMUNITY ==================== */}
+      <section className="bg-black py-1">
+        <div className="grid grid-cols-4 gap-1">
+          <div className="relative aspect-[3/4] overflow-hidden">
+            <Image src="/images/Photos-Videos/Culto-de-mulheres5.jpg" alt="Mulher adorando" fill className="object-cover" />
+          </div>
+          <div className="relative aspect-[3/4] overflow-hidden">
+            <Image src="/images/Photos-Videos/523098151_18524808037030544_7887472504581379021_n.jpg" alt="Batismo" fill className="object-cover" />
+          </div>
+          <div className="relative aspect-[3/4] overflow-hidden">
+            <Image src="/images/Photos-Videos/526804262_18396594418143219_6247029674856534470_n.jpg" alt="Adoração" fill className="object-cover" />
+          </div>
+          <div className="relative aspect-[3/4] overflow-hidden">
+            <Image src="/images/Photos-Videos/Pr-Alexandre9.jpg" alt="Pastor Alexandre" fill className="object-cover" />
           </div>
         </div>
       </section>
