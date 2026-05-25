@@ -101,17 +101,11 @@ export default function VemPraIgrejaPage() {
         className="min-h-screen"
       >
         <div className="flex flex-col items-center justify-end min-h-screen px-6 pb-12 sm:pb-16 text-center">
-          <div className="bg-black/60 backdrop-blur-sm px-8 sm:px-12 py-6 sm:py-8 rounded-lg border border-white/10">
-            <p className="text-secondary text-[10px] sm:text-xs font-semibold tracking-[0.3em] uppercase mb-3">
-              Templo dos Milagres
-            </p>
-
-            <h1 className="text-3xl sm:text-5xl lg:text-7xl font-extrabold leading-[0.95] tracking-tight text-white font-display">
-              Você não precisa
-              <br />
-              caminhar <span className="italic text-secondary">sozinho</span>
-            </h1>
-          </div>
+          <h1 className="bg-black/60 backdrop-blur-sm px-8 sm:px-12 py-5 sm:py-6 rounded-lg border border-white/10 text-3xl sm:text-5xl lg:text-7xl font-extrabold leading-[0.95] tracking-tight text-white font-display">
+            Você não precisa
+            <br />
+            caminhar <span className="italic text-secondary">sozinho</span>
+          </h1>
 
           <div className="mt-8 flex flex-col items-center gap-2">
             <span className="text-white/30 text-[10px] tracking-[0.3em] uppercase">
