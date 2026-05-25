@@ -100,22 +100,22 @@ export default function VemPraIgrejaPage() {
         src="/images/Photos-Videos/Vem-Pra-Igreja1.mp4"
         className="min-h-screen"
       >
-        <div className="text-center px-6 py-32 sm:py-40">
-          <p className="text-secondary text-[10px] sm:text-xs font-semibold tracking-[0.3em] uppercase mb-8 drop-shadow-lg">
+        <div className="flex flex-col items-center justify-end min-h-screen px-6 pb-12 sm:pb-16 text-center">
+          <p className="text-secondary text-[10px] sm:text-xs font-semibold tracking-[0.3em] uppercase mb-4 drop-shadow-lg">
             Templo dos Milagres
           </p>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-8xl font-extrabold leading-[0.95] tracking-tight text-white font-display drop-shadow-2xl">
+          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-extrabold leading-[0.95] tracking-tight text-white font-display drop-shadow-2xl">
             Você não precisa
             <br />
             caminhar <span className="italic text-secondary">sozinho</span>
           </h1>
 
-          <div className="mt-20 flex flex-col items-center gap-2">
+          <div className="mt-10 flex flex-col items-center gap-2">
             <span className="text-white/30 text-[10px] tracking-[0.3em] uppercase">
               Continue lendo
             </span>
-            <div className="w-px h-12 bg-gradient-to-b from-secondary/40 to-transparent" />
+            <div className="w-px h-8 bg-gradient-to-b from-secondary/40 to-transparent" />
           </div>
         </div>
       </ScrollVideo>
