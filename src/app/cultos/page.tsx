@@ -4,6 +4,7 @@ import { Clock, MapPin, Play, Users, BookOpen, Music } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import LiveBadge from "@/components/LiveBadge";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
+import VideoPlayer from "@/components/VideoPlayer";
 
 export const metadata: Metadata = {
   title: "Cultos",
@@ -33,7 +34,7 @@ export default function CultosPage() {
       {/* Hero with Live Stream */}
       <section className="relative py-28 sm:py-36 bg-black overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
-        <div className="absolute inset-0 bg-[url('/images/worship-crowd-lights.jpg')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/images/Photos-Videos/695943242_18584877118038256_6369725103238529442_n.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -87,6 +88,23 @@ export default function CultosPage() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Video Highlight */}
+      <section className="py-20 sm:py-28 bg-black">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="text-center mb-12">
+            <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-secondary mb-3">
+              Nossos Cultos
+            </p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white font-display">
+              Viva a <span className="italic">Experiência</span>
+            </h2>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <VideoPlayer src="/images/Photos-Videos/Great-for-website2.mp4" className="aspect-video rounded-lg" />
           </div>
         </div>
       </section>

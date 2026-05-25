@@ -26,6 +26,7 @@ const mediaLinks = [
   { name: "TDM Talk Podcast", href: "/tdm-talk" },
   { name: "Cultos Ao Vivo", href: "/cultos" },
   { name: "Eventos", href: "/eventos" },
+  { name: "Galeria", href: "/galeria" },
   { name: "Blog", href: "/blog" },
 ];
 

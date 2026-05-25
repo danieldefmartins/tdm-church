@@ -53,7 +53,7 @@ export default function LiderancaPage() {
       {/* Hero */}
       <section className="relative py-28 sm:py-36 bg-black overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
-        <div className="absolute inset-0 bg-[url('/images/pastor-alexandre-preaching.jpg')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/images/Photos-Videos/Pr-Alexandre.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-secondary mb-4">
             Nossos Líderes

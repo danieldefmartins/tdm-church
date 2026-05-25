@@ -21,27 +21,28 @@ import {
 import SectionHeading from "@/components/SectionHeading";
 import LiveBadge from "@/components/LiveBadge";
 import HeroCarousel from "@/components/HeroCarousel";
+import VideoPlayer from "@/components/VideoPlayer";
 
 const heroSlides = [
   {
-    src: "/images/pastor-alexandre-preaching.jpg",
-    alt: "Pastor Alexandre pregando na TDM Church",
+    src: "/images/Photos-Videos/Pr-Alexandre.jpg",
+    alt: "Pastor Alexandre pregando na TDM Church com luzes e fumaça",
   },
   {
-    src: "/images/worship-crowd-hands.jpg",
-    alt: "Congregação adorando com mãos levantadas",
+    src: "/images/Photos-Videos/650019878_18429183328143219_5906374747522973205_n.jpg",
+    alt: "Pastor Alexandre de costas com congregação segurando velas",
   },
   {
-    src: "/images/worship-crowd-lights.jpg",
-    alt: "Culto de adoração na TDM Church",
+    src: "/images/Photos-Videos/Culto-de-mulheres2.jpg",
+    alt: "Mulher adorando de mãos levantadas em preto e branco",
   },
   {
-    src: "/images/woman-worship.jpg",
-    alt: "Momento de adoração",
+    src: "/images/Photos-Videos/523098151_18524808037030544_7887472504581379021_n.jpg",
+    alt: "Batismo na TDM Church com alegria",
   },
   {
-    src: "/images/baptism-church.jpg",
-    alt: "Batismo na TDM Church",
+    src: "/images/Photos-Videos/695943242_18584877118038256_6369725103238529442_n.jpg",
+    alt: "Banda de louvor com crucifixo na tela",
   },
 ];
 
@@ -52,7 +53,7 @@ const departments = [
       "Uma geração apaixonada por Deus. Encontros, retiros e comunidade para jovens.",
     icon: Rocket,
     href: "/tdm-youth",
-    image: "/images/worship-crowd-excited.jpg",
+    image: "/images/Photos-Videos/670290276_18576905548038256_5755455007463808641_n.jpg",
   },
   {
     name: "TDM Kids",
@@ -68,7 +69,7 @@ const departments = [
       "Levando o evangelho ao mundo através de missões locais e internacionais.",
     icon: Globe,
     href: "/tdm-missions",
-    image: "/images/cross-sunset-dramatic.jpg",
+    image: "/images/Photos-Videos/Pr-Alexandre14.jpg",
   },
   {
     name: "TDM Mastermind",
@@ -76,7 +77,7 @@ const departments = [
       "Encontro quinzenal de empresários e futuros empresários. Café, oração e negócios.",
     icon: Briefcase,
     href: "/tdm-mastermind",
-    image: "/images/cross-city-sunrise.jpg",
+    image: "/images/Photos-Videos/698483876_18584877088038256_8314401509394760064_n.jpg",
   },
   {
     name: "TDM Local",
@@ -84,7 +85,7 @@ const departments = [
       "Apoio e orientação para imigrantes nos EUA. Você não está sozinho.",
     icon: HandHeart,
     href: "/tdm-local",
-    image: "/images/israel-flag-field.jpg",
+    image: "/images/Photos-Videos/524490633_18524808046030544_6071906744422372845_n.jpg",
   },
   {
     name: "TDM Mulheres",
@@ -92,7 +93,7 @@ const departments = [
       "Comunidade feminina de oração, adoração e fortalecimento espiritual.",
     icon: Heart,
     href: "#",
-    image: "/images/hands-worship-golden.jpg",
+    image: "/images/Photos-Videos/Culto-de-mulheres9.jpg",
   },
 ];
 
@@ -290,8 +291,8 @@ export default function Home() {
       <section className="relative py-24 sm:py-32 bg-black overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/worship-crowd-hands.jpg"
-            alt="Culto de adoração"
+            src="/images/Photos-Videos/526804262_18396594418143219_6247029674856534470_n.jpg"
+            alt="Mulher adorando com pandeiro na TDM Church"
             fill
             className="object-cover opacity-40"
           />
@@ -441,7 +442,7 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-square max-w-md mx-auto overflow-hidden relative">
                 <Image
-                  src="/images/hand-worship-purple.jpg"
+                  src="/images/Photos-Videos/549768183_18401838598143219_8437497373732346550_n.jpg"
                   alt="TDM Talk Podcast"
                   fill
                   className="object-cover"
@@ -511,6 +512,23 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ==================== VIDEO SECTION ==================== */}
+      <section className="py-24 sm:py-32 bg-black">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="text-center mb-12">
+            <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-secondary mb-3">
+              Veja Nossa Igreja
+            </p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white font-display">
+              Momentos que <span className="italic">Marcam</span>
+            </h2>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <VideoPlayer src="/images/Photos-Videos/Great-for-website.mp4" className="aspect-video rounded-lg" />
+          </div>
+        </div>
+      </section>
+
       {/* ==================== EVENTS ==================== */}
       <section className="py-20 sm:py-24 bg-warm-50">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -568,8 +586,8 @@ export default function Home() {
       <section className="relative py-24 sm:py-32 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/cross-sunset-dramatic.jpg"
-            alt="Cruz ao pôr do sol"
+            src="/images/Photos-Videos/Pr-Alexandre9.jpg"
+            alt="Pastor Alexandre com mão levantada e cruz vermelha ao fundo"
             fill
             className="object-cover"
           />

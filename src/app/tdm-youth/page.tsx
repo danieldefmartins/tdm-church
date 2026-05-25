@@ -10,6 +10,7 @@ import {
   ArrowRight,
   Zap,
 } from "lucide-react";
+import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
@@ -51,7 +52,7 @@ export default function TdmYouthPage() {
       {/* Hero */}
       <section className="relative py-28 sm:py-40 bg-black overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
-        <div className="absolute inset-0 bg-[url('/images/worship-crowd-excited.jpg')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/images/Photos-Videos/670290276_18576905548038256_5755455007463808641_n.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm border border-white/20 mb-6">
             <Rocket className="w-4 h-4 text-secondary" />
@@ -145,16 +146,13 @@ export default function TdmYouthPage() {
               </div>
             </div>
 
-            {/* Photo Placeholder */}
-            <div className="aspect-[4/3] rounded-lg bg-gradient-to-br from-black/10 to-secondary/10 overflow-hidden shadow-xl flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Rocket className="w-10 h-10 text-secondary" />
-                </div>
-                <p className="text-stone-500 text-sm">
-                  Foto do youth aqui
-                </p>
-              </div>
+            <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl relative">
+              <Image
+                src="/images/Photos-Videos/548296443_18401838529143219_902555118183139563_n.jpg"
+                alt="Jovem adorando com mão levantada na TDM Youth"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>

@@ -129,7 +129,7 @@ export default function VemPraIgrejaPage() {
       {/* ==================== HERO — ACOLHEDOR ==================== */}
       <section className="relative min-h-screen flex items-center bg-black overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
-        <div className="absolute inset-0 bg-[url('/images/hands-worship-golden.jpg')] bg-cover bg-center opacity-15" />
+        <div className="absolute inset-0 bg-[url('/images/Photos-Videos/650019878_18429183328143219_5906374747522973205_n.jpg')] bg-cover bg-center opacity-15" />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
 
         <div className="relative max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-32 sm:py-40 text-center">
@@ -499,7 +499,7 @@ export default function VemPraIgrejaPage() {
 
       {/* ==================== CARTA DO PASTOR ==================== */}
       <section className="relative py-20 sm:py-28 bg-cream overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/woman-worship.jpg')] bg-cover bg-center opacity-5" />
+        <div className="absolute inset-0 bg-[url('/images/Photos-Videos/Pr-Alexandre2.jpg')] bg-cover bg-center opacity-5" />
         <div className="relative max-w-3xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="bg-white rounded-3xl p-8 sm:p-12 border border-stone-100 shadow-sm">
             <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-6">

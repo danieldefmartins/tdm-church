@@ -93,7 +93,7 @@ export default function QuemSomosPage() {
       {/* Hero */}
       <section className="relative py-28 sm:py-36 bg-black overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/80" />
-        <div className="absolute inset-0 bg-[url('/images/cross-city-sunrise.jpg')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/images/Photos-Videos/Pr-Alexandre9.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-secondary mb-4">
             Desde 1996
@@ -166,8 +166,8 @@ export default function QuemSomosPage() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/images/woman-worship.jpg"
-                  alt="Momento de adoração na TDM Church"
+                  src="/images/Photos-Videos/549768183_18401838598143219_8437497373732346550_n.jpg"
+                  alt="Mulher adorando com mão levantada na TDM Church"
                   width={800}
                   height={600}
                   className="w-full h-full object-cover"
