@@ -221,17 +221,18 @@ export default function VemPraIgrejaPage() {
           src="/images/Photos-Videos/Vem-Pra-Igreja2.mp4"
           className="w-full max-w-2xl aspect-[3/4] sm:aspect-[3/4]"
         >
-          <div className="text-center px-6">
-            <p className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display drop-shadow-2xl">
-              <span className="italic">&ldquo;Vinde a mim,</span>
-              <br />
-              <span className="text-secondary">todos os que estais<br />cansados&rdquo;</span>
-            </p>
-            <p className="mt-4 text-white/60 text-sm uppercase tracking-[0.2em] drop-shadow-lg">
-              Mateus 11:28
-            </p>
-          </div>
+          {null}
         </ScrollVideo>
+        <div className="bg-black text-center py-10 sm:py-14 px-6">
+          <p className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
+            <span className="italic">&ldquo;Vinde a mim,</span>
+            <br />
+            <span className="text-secondary">todos os que estais cansados&rdquo;</span>
+          </p>
+          <p className="mt-4 text-white/40 text-sm uppercase tracking-[0.2em]">
+            Mateus 11:28
+          </p>
+        </div>
       </section>
 
       {/* ==================== POR QUE VIR ==================== */}
