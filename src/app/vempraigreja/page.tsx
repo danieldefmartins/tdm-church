@@ -95,40 +95,39 @@ const reasons = [
 export default function VemPraIgrejaPage() {
   return (
     <>
-      {/* ==================== HERO — VIDEO BACKGROUND ==================== */}
-      <section className="relative min-h-screen flex items-center bg-black overflow-hidden">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-70"
-        >
-          <source
-            src="/images/Photos-Videos/Vem-Pra-Igreja1.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
-
-        <div className="relative max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-32 sm:py-40 text-center">
-          <p className="text-secondary text-[10px] sm:text-xs font-semibold tracking-[0.3em] uppercase mb-8">
+      {/* ==================== HERO — FULL VIDEO WITH SOUND ==================== */}
+      <ScrollVideo
+        src="/images/Photos-Videos/Vem-Pra-Igreja1.mp4"
+        className="min-h-screen"
+      >
+        <div className="text-center px-6 py-32 sm:py-40">
+          <p className="text-secondary text-[10px] sm:text-xs font-semibold tracking-[0.3em] uppercase mb-8 drop-shadow-lg">
             Templo dos Milagres
           </p>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-8xl font-extrabold leading-[0.95] tracking-tight text-white font-display">
+          <h1 className="text-4xl sm:text-6xl lg:text-8xl font-extrabold leading-[0.95] tracking-tight text-white font-display drop-shadow-2xl">
             Você não precisa
             <br />
             caminhar <span className="italic text-secondary">sozinho</span>
           </h1>
 
-          <p className="mt-8 text-base sm:text-lg text-white/60 max-w-xl mx-auto leading-relaxed">
+          <div className="mt-20 flex flex-col items-center gap-2">
+            <span className="text-white/30 text-[10px] tracking-[0.3em] uppercase">
+              Continue lendo
+            </span>
+            <div className="w-px h-12 bg-gradient-to-b from-secondary/40 to-transparent" />
+          </div>
+        </div>
+      </ScrollVideo>
+
+      {/* ==================== CTA BAR ==================== */}
+      <section className="bg-black py-8 sm:py-10">
+        <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
+          <p className="text-white/50 text-base sm:text-lg leading-relaxed mb-6">
             Existe um lugar onde você é acolhido exatamente como é. Sem
             julgamento, sem pressão — apenas amor.
           </p>
-
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               href="/cultos"
               className="inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-white text-black font-bold rounded-lg hover:bg-white/90 transition-colors text-base"
@@ -142,13 +141,6 @@ export default function VemPraIgrejaPage() {
             >
               Saiba Mais
             </a>
-          </div>
-
-          <div className="mt-20 flex flex-col items-center gap-2">
-            <span className="text-white/20 text-[10px] tracking-[0.3em] uppercase">
-              Continue lendo
-            </span>
-            <div className="w-px h-12 bg-gradient-to-b from-secondary/40 to-transparent" />
           </div>
         </div>
       </section>
