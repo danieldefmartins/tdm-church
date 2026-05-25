@@ -544,19 +544,20 @@ export default function VemPraIgrejaPage() {
       </section>
 
       {/* ==================== VIDEO EMOCIONAL 3 ==================== */}
-      <section className="bg-black flex justify-center">
+      <section className="bg-black flex flex-col items-center">
         <ScrollVideo
           src="/images/Photos-Videos/Vem-Pra-Igreja1.mp4"
           className="w-full max-w-2xl aspect-[3/4] sm:aspect-[3/4]"
         >
-          <div className="text-center px-6">
-            <p className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display drop-shadow-2xl">
-              Sua história de fé
-              <br />
-              <span className="italic text-secondary">começa aqui</span>
-            </p>
-          </div>
+          {null}
         </ScrollVideo>
+        <div className="text-center py-10 sm:py-14 px-6">
+          <p className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
+            Sua história de fé
+            <br />
+            <span className="italic text-secondary">começa aqui</span>
+          </p>
+        </div>
       </section>
 
       {/* ==================== PHOTO BREAK — COMMUNITY ==================== */}
